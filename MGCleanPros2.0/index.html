@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M&G Clean Pros LLC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="mgcleanpros-transparent.png" id="logo" class="logo-item">
+            <span id="open-menu" class="material-symbols-outlined md">menu</span>
+            <span id="close-menu" class="material-symbols-outlined md hide">close</span>
+        </div>
+        <nav class="hide">
+            <a id="about-tab">About</a>
+            <a id="services-tab">Services</a>
+            <a id="gallery-tab">Our Work</a>
+            <a id="reviews-tab">Reviews</a>
+            <a id="contact-tab">Contact</a>
+        </nav>
+    </header>
+
+    <section id="hero-section">
+        <span id="hero-s" class="hero-item">The Cleaning Pros for any Type of Job</span>
+        <button id="hero-p" class="hero-item">Call Now for a Quote</button>
+    </section>
+    
+    <div id="modal-container" class="hide">
+        <form method="post" id="modal">
+            <span id="close-modal" class="material-symbols-outlined mod">close</span>
+            <fieldset id="personal-info">
+                <legend class="modal-title">Get a Free Quote</legend>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </fieldset>
+            <fieldset id="job-info">
+                <legend class="job-info-title">What Service Are You Looking For?</legend>
+                <div class="radio-div">
+                    <input type="radio" id="residential" name="residential">
+                    <label for="residential">Residential</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" id="commercial" name="commercial">
+                    <label for="commercial">Suite/Commercial</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" id="movein-moveout" name="movein-moveout">
+                    <label for="movein-moveout">Move in/Move out</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" id="construction" name="construction">
+                    <label for="construction">Post Construction</label>
+                </div>
+                <div class="radio-div">
+                    <input type="radio" id="recurring" name="recurring">
+                    <label for="recurring">Recurring Service</label>
+                </div>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <section id="about-section">
+        <h1 class="section-title">About</h1>
+        <div class="section-descrip">
+            <p>M&G Clean Pros offer proffessional cleaning services with a first-class customer experience.</p><br>
+            <p>Why choose us? We have 3 simple tenets that put us a cut above the rest:</p>
+            <p class="keys">Customer Focused</p>
+            <p class="keys">Detail Oriented</p>
+            <p class="keys">Superior Service</p>
+            <p>We are in the Aurora, IL area but service a vast area of the western Chicagoland suburbs. Our work has taken us to:</p><br>
+            <div id="location-container">
+                <p class="location-item">Naperville</p>
+                <p class="location-item">Wheaton</p>
+                <p class="location-item">Plainfield</p>
+                <p class="location-item">Carol Stream</p>
+                <p class="location-item">Geneva</p>
+                <p class="location-item">West Chicago</p>
+                <p class="location-item">Streamwood</p>
+                <p class="location-item">Saint Charles</p>
+            </div><br>
+            <p>And many more places. Regardless of where you're located, we can be the solution for you.<br><br>
+                Imagine after a long day at work, coming home to a clean place. Or instead of cleaning on your day off,
+                you can enjoy that day trip while we get your place cleaned up.<br><br>
+                Life is stressful enough, let us take some stress off of you. Call us today for a quote!</p>
+            <button class="call-now">Call Now To Get a Quote</button>
+        </div>
+    </section>
+
+    <section id="services-section">
+        <h1 class="section-title">Services</h1>
+        <div id="services-all-container" class="section-descrip">
+            <div class="service-item">
+                <h3 class="service-title">Residential Cleaning</h3>
+                <div class="service-img-container">
+                    <img class="service-image" src="1.png" alt="Commercial building">
+                </div>
+                <span class="material-symbols-outlined ex1">expand_more</span>
+                <span class="material-symbols-outlined ex2 hide">expand_less</span>
+                <p class="services-description hide">Looking to clean your home? We do deep cleans on all of our first time residential cleanings.
+                    After that, we can schedule maintainance cleanings that help keep your home in tip-top shape.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Commercial & Suite Cleaning</h3>
+                <div class="service-img-container">
+                    <img class="service-image" src="2.png" alt="Commercial building">
+                </div>
+                <span class="material-symbols-outlined ex1">expand_more</span>
+                <span class="material-symbols-outlined ex2 hide">expand_less</span>
+                <p class="services-description hide">We provide cleaning services to small businesses and commercial operations as well. Whether you have a salon,
+                    business office, or larger commercial building, we can keep your business looking great.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Move In & Move Out Cleaning</h3>
+                <div class="service-img-container">
+                    <img class="service-image" src="3.png" alt="Commercial building">
+                </div>
+                <span class="material-symbols-outlined ex1">expand_more</span>
+                <span class="material-symbols-outlined ex2 hide">expand_less</span>
+                <p class="services-description hide">Are you moving into or out of a home? Let us help you get it looking move-in ready.
+                    Are you a realtor or landlord looking to get a home/unit ready for a move-in, or need ir cleaned after a move-out?
+                    We are masters of move-in/move-out deep cleaning. Let us help you out!
+                </p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Post-Construction Clean Up</h3>
+                <div class="service-img-container">
+                    <img class="service-image" src="4.png" alt="Commercial building">
+                </div>
+                <span class="material-symbols-outlined ex1">expand_more</span>
+                <span class="material-symbols-outlined ex2 hide">expand_less</span>
+                <p class="services-description hide">Just finished some home renovation? Call us for post-construction cleaning,
+                    and save youself the time and labor of cleaning, and let us bring out the full beauty of your newly modified home.
+                </p>
+            </div>
+            <div class="service-item">
+                <h3 class="service-title">Recurring Weekly, Bi-Weekly, and Monthly Cleans</h3>
+                <div class="service-img-container">
+                    <img class="service-image" src="5.png" alt="Commercial building">
+                </div>
+                <span class="material-symbols-outlined ex1">expand_more</span>
+                <span class="material-symbols-outlined ex2 hide">expand_less</span>
+                <p class="services-description hide">After our first time deep clean, we offer recurring cleanings to keep your residence in tip-top shape.
+                    You can schedule monthly, bi-weekly, weekly, or whatever frequency of cleanings you prefer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery-section">
+        <h1 class="section-title">Gallery</h1>
+        <div class="section-descrip">
+            
+        </div>
+    </section>
+
+    <section id="reviews-section">
+        <h1 class="section-title">Reviews</h1>
+        <div class="section-descrip">
+            
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2 class="section-title">Contact</h2>
+        <div class="section-descrip">
+            
+        </div>
+    </section>
+
+    <footer></footer>
+    <script src="mgclean.js"></script>
+</body>
+</html>
