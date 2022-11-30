@@ -6,8 +6,10 @@ const closeMenu = document.getElementById('close-menu');
 const openMenu = document.getElementById('open-menu');
 const nav = document.querySelector('nav');
 
-const modal = document.getElementById('modal-container');
+const modalCont = document.getElementById('modal-container');
 const modalClose = document.getElementById('close-modal');
+const modalForm = document.getElementById('modal');
+const submit = document.getElementById('submit-btn');
 
 const about = document.getElementById('about-tab');
 const services = document.getElementById('services-tab');
@@ -64,14 +66,23 @@ contact.addEventListener('click', () => {
     contactSection.scrollIntoView({behavior: "smooth"});
 });
 
-//----- Function for modal pop-up for bookings -----//
+//----- Function for modal pop-up for bookings and functionality of modal -----//
 
 setTimeout(() => {
-    modal.classList.remove('hide');
-}, 8000);
+    modalCont.classList.remove('hide');
+}, 1000);
+
 
 modalClose.addEventListener('click', () => {
-    modal.classList.add('hide');
+    modalCont.classList.add('hide');
+});
+
+submit.addEventListener('click', () => {
+    submit.disabled = true;
+    submit.insertAdjacentHTML('afterend', '<p class="submit-tag">*Thank you! Someone from our team will reach out to you shortly.</p>');
+    setTimeout(() => {
+        modalCont.classList.add('hide');
+    }, 3000);
 });
 
 //----- Functions to open "read more" on service items -----//
@@ -134,4 +145,48 @@ readMoreService[4].addEventListener('click', () => {
         readMoreService[4].classList.remove('hide');
         readLessService[4].classList.add('hide');
     });
+});
+
+//----- GALLERY -----//
+
+// select gallery items
+const galleryCarousel = [
+    {image: 'kitchen2-img.jpg'},
+    {image: 'kitchen-img.jpg'},
+    {image: 'employee-img.jpg'},
+    {image: 'intro-img.jpg'}
+];
+
+const img = document.getElementById('img');
+const nxtBtn = document.getElementById('next-btn');
+const prevBtn = document.getElementById('prev-btn');
+let currentItem = 0;
+
+// load initial image in html
+window.addEventListener('DOMContentLoaded', () => {
+    showGalleryItem();
+});
+
+// show current item
+const showGalleryItem = () => {
+    const item = galleryCarousel[currentItem];
+    img.src = item.image;
+};
+
+// show next item
+nxtBtn.addEventListener('click', () => {
+    currentItem++;
+    if(currentItem > galleryCarousel.length - 1) {
+        currentItem = 0;
+    };
+    showGalleryItem();
+});
+
+// show previous item
+prevBtn.addEventListener('click', () => {
+    currentItem--;
+    if(currentItem < 0) {
+        currentItem = galleryCarousel.length - 1;
+    };
+    showGalleryItem();
 });
