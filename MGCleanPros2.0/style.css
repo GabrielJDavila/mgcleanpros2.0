@@ -8,6 +8,11 @@ body {
 
 body {
     font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 header {
@@ -40,7 +45,9 @@ p {
     margin: 0;
 }
 
-section {}
+.section {
+    margin-top: 3em;
+}
 
 .section-title {
     width: 100px;
@@ -128,6 +135,7 @@ footer {}
 
 #modal-container {
     position: relative;
+    z-index: 1;
 }
 
 #modal {
@@ -256,6 +264,11 @@ footer {}
     color: white;
 }
 
+.location-item:hover {
+    transform: scale(1.2);
+    transition: ease all .5s;
+}
+
 .call-now {
     font-family: 'Poppins', sans-serif;
 }
@@ -324,6 +337,26 @@ footer {}
     width: 80%;
     height: 80%;text-align: center;
     margin: 0 auto;
+    padding-bottom: 0;
+}
+
+#prev-btn,
+#next-btn {
+    font-size: 35px;
+    background-color: rgb(22, 105, 143);
+    color: white;
+    border: 2px solid rgb(22, 105, 143);
+    box-shadow: 0 0 5px rgb(22, 105, 143);
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+
+#prev-btn {
+    margin-right: .5em;
+}
+
+#next-btn {
+    margin-left: .5em;
 }
 
 #img {
@@ -336,9 +369,26 @@ footer {}
     
 }
 
+.review {
+    width: 85%;
+}
+
 #contact-section {
-    height: 300px;
+    height: 500px;
     
+}
+
+.contact {
+    height: 100%;
+}
+
+.map {
+    width: 85%;
+    height: 80%;
+}
+
+footer {
+    margin-top: 5em;
 }
 
 .material-symbols-outlined.hide {
