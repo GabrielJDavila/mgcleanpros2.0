@@ -120,6 +120,7 @@ footer {}
     color: white;
     padding: 6px;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 #hero-p:hover {
@@ -269,13 +270,20 @@ footer {}
     transition: ease all .5s;
 }
 
+#about-last-p {
+    margin-bottom: 1em;
+}
+
 .call-now {
     font-family: 'Poppins', sans-serif;
+    margin-top: 3em;
+    text-decoration: none;
 }
 
 .call-now:hover {
     transform: scale(1.1);
     transition: ease all .5s;
+    border-radius: 4px;
 }
 
 #services-section {
@@ -382,13 +390,21 @@ footer {}
     height: 100%;
 }
 
+.small-contact-title {
+    margin-bottom: .5em;
+}
+
+.contact-link {
+    
+}
+
 .map {
     width: 85%;
     height: 80%;
+    margin-top: 1em;
 }
-
 footer {
-    margin-top: 5em;
+    margin-top: 12em;
 }
 
 .material-symbols-outlined.hide {
